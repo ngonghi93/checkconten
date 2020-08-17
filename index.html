@@ -1,0 +1,704 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        
+        <title>Hệ thống link BM tự động</title>
+        
+        <meta name="description" content="Hệ thống link BM tự động">
+        <meta name="author" content="pixelcave">
+        <meta name="robots" content="noindex, nofollow">
+        
+        <!-- Open Graph Meta -->
+        <meta property="og:title" content="Hệ thống link BM tự động">
+        <meta property="og:site_name" content="Dashmix">
+        <meta property="og:description" content="Hệ thống link BM tự động">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+        
+        <!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+        <link rel="shortcut icon" href="assets2/media/favicons/ld.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="assets2/media/favicons/ld.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets2/media/favicons/ld.png">
+        <!-- END Icons -->
+        
+        <!-- Stylesheets -->
+        <!-- Fonts and Dashmix framework -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700">
+        <link rel="stylesheet" id="css-main" href="assets2/css/dashmix.min.css">
+        <link rel="stylesheet" type="text/css" href="/assets/css/sweetalert.css">
+        <script src="/assets/js/sweetalert.min.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170081306-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            
+            gtag('config', 'UA-170081306-1');
+        </script>
+        
+        
+        <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+        <!-- <link rel="stylesheet" id="css-theme" href="assets2/css/themes/xwork.min.css"> -->
+        <!-- END Stylesheets -->
+    </head>
+    <body>
+        <div id="page-container" class="page-header-dark main-content-boxed">
+            <!-- Header -->
+            <header id="page-header">
+                <!-- Header Content -->
+                <div class="content-header">
+                    <!-- Left Section -->
+                    <div>
+                        <!-- Logo -->
+                        <a class="link-fx font-size-lg text-dual" href="index.html">
+                            <img src="https://likedao.org/image/ld.png"width="55" hight="55">
+                            <span class="text-dual font-weight-bold">LIKE DẠO .ORG</span>
+                        </a>
+                        <!-- END Logo -->
+                    </div>
+                    <!-- END Left Section -->
+                    
+                    <!-- Right Section -->
+                    <div>
+                        <!-- User Dropdown -->
+<!--------- User --------------------------------------------------------------------------------------->
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn btn-dual" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="img-avatar img-avatar32 img-avatar-thumb" src="assets2/media/avatars/avatar12.jpg" alt="">
+                                <i class="fa fa-fw fa-angle-down ml-1"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg p-0" aria-labelledby="page-header-user-dropdown">
+                                <div class="rounded-top font-w600 text-center p-3 border-bottom">
+                                    <img class="img-avatar img-avatar48" src="assets2/media/avatars/avatar12.jpg" alt="">
+                                    <div class="pt-2">
+                                        
+                                    </div>
+                                    <a class="font-w600 text-dark" href="javascript:void(0)">ngonghi</a>
+                                </div>
+                                  <div class="p-2">
+                               
+                                <b>
+                                                <a class="nav-main-link" href="/lichsu2.php">
+                                                    <i class="fa fa-wallet fa-fw text-gray mr-1"></i>
+                                                    <span class="nav-main-link-name"><font color="#3367d6">Lịch Sử Mua Hàng</font></span>
+                                                </a>
+                                           
+                                        </ul>
+                                    </b>
+                                </div>
+                                <div class="p-2">
+                                    <a class="dropdown-item" href="javascript:void(0)">
+                                        <i class="fa fa-wallet fa-fw text-gray mr-1"></i> Số dư <b><font color="#d52c1f" size="3">700,000 VNĐ</font></b>
+                                    </a>
+                                </div>
+                                
+                                <div class="p-2">
+                                    <a class="dropdown-item mb-0" href="/logout.html">
+                                        <i class="fa fa-fw fa-sign-out-alt text-danger mr-1"></i> Đăng xuất
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END User Dropdown -->
+                    </div>
+                    <!-- END Right Section -->
+                </div>
+                <!-- END Header Content -->
+<!--------- End User --------------------------------------------------------------------------------------->
+
+                
+                <!-- Header Search -->
+                <div id="page-header-search" class="overlay-header bg-primary">
+                    <div class="content-header">
+                        <form class="w-100" action="be_pages_generic_search.html" method="POST">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                                    <button type="button" class="btn btn-primary" data-toggle="layout" data-action="header_search_off">
+                                        <i class="fa fa-fw fa-times-circle"></i>
+                                    </button>
+                                </div>
+                                <input type="text" class="form-control border-0" placeholder="Search.." id="page-header-search-input" name="page-header-search-input">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- END Header Search -->
+                
+                <!-- Header Loader -->
+                <!-- Please check out the Loaders page under Components category to see examples of showing/hiding it -->
+                <div id="page-header-loader" class="overlay-header bg-primary-darker">
+                    <div class="content-header">
+                        <div class="w-100 text-center">
+                            <i class="fa fa-fw fa-2x fa-sun fa-spin text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Header Loader -->
+            </header>
+            <!-- END Header -->
+            <main id="main-container">
+                <!-- Navigation -->
+                <div class="bg-white">
+                    <div class="content">
+                        <!-- Toggle Main Navigation -->
+                        <div class="d-lg-none push">
+                            <!-- Class Toggle, functionality initialized in Helpers.coreToggleClass() -->
+                            <button type="button" class="btn btn-block btn-light d-flex justify-content-between align-items-center" data-toggle="class-toggle" data-target="#main-navigation" data-class="d-none">
+                                Menu
+                                <i class="fa fa-bars"></i>
+                            </button>
+                        </div>
+                        <!-- END Toggle Main Navigation -->
+                        
+                        <!-- Main Navigation -->
+                        <div id="main-navigation" class="d-none d-lg-block push">
+                            <ul class="nav-main nav-main-horizontal nav-main-hover">
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link" href="/">
+                                        <i class="nav-main-link-icon fas fa-home"></i>
+                                        <span class="nav-main-link-name">Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link" href="/muabm.php">
+                                        <i class="nav-main-link-icon fas fa-home"></i>
+                                        <span class="nav-main-link-name">Mua BM</span>
+                                    </a>
+                                </li>
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link" href="/muavia.html">
+                                        <i class="nav-main-link-icon fab fa-facebook-square"></i>
+                                        <span class="nav-main-link-name">Mua Via</span>
+                                    </a>
+                                </li>
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link" href="/naptien.html">
+                                        <i class="nav-main-link-icon fas fa-donate"></i>
+                                        <span class="nav-main-link-name">Nạp tiền</span>
+                                    </a>
+                                </li>
+ <!--------- Menu Liên hệ --------------------------------------------------------------------------------------->
+                                <li class="nav-main-heading">Liên hệ</li>
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
+                                        <i class="nav-main-link-icon fa fa-comments"></i>
+                                        <span class="nav-main-link-name">Liên hệ</span>
+                                    </a>
+                                    <ul class="nav-main-submenu">
+                                        <li class="nav-main-item">
+                                            <a class="nav-main-link" href="https://www.messenger.com/t/tuan.marketing.0888020555">
+                                                <i class="nav-main-link-icon fas fa-comments"></i>
+                                                <span class="nav-main-link-name">Nhắn tin hỗ trợ</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-main-item">
+                                            <a class="nav-main-link" href="tel:+84888020555">
+                                                <i class="nav-main-link-icon fas fa-phone-square"></i>
+                                                <span class="nav-main-link-name">Zalo 0888.020.555</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-main-item">
+                                            <a class="nav-main-link" href="https://t.me/joinchat/QogdixnZSFjo0p8L-7RcBQ">
+                                                <i class="nav-main-link-icon fab fa-telegram"></i>
+                                                <span class="nav-main-link-name">Nhóm Support Telegram</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-main-item">
+                                            <a class="nav-main-link" href="https://zalo.me/g/qndtmi113">
+                                                <i class="nav-main-link-icon fab fa-telegram"></i>
+                                                <span class="nav-main-link-name">Nhóm Support Zalo</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+<!--------- Menu Tút hỗ trợ --------------------------------------------------------------------------------------->
+                                <li class="nav-main-heading">Tút Hỗ Trợ</li>
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
+                                        <i class="nav-main-link-icon fa fa-puzzle-piece"></i>
+                                        <span class="nav-main-link-name">Tút Hay</span>
+                                    </a>                 
+                                    <ul class="nav-main-submenu">
+                            <!--------- ---sss- ------->             
+                                                                                    <li class="nav-main-item">
+                                                <a class="nav-main-link" href="/tutlencamp.php">
+                                                    <i class="nav-main-link-icon fab fa-telegram"></i>
+                                                    <span class="nav-main-link-name">Tút Lên Camp TK Cá nhân không cần nuôi</span>
+                                                </a>
+                                            </li>
+                                              
+                          <!--------- ---ee- ------->          
+                             <!--------- ---sss- ------->             
+                                                                                    <li class="nav-main-item">
+                                                <a class="nav-main-link" href="/tuttranhdiedomain.php">
+                                                    <i class="nav-main-link-icon fab fa-telegram"></i>
+                                                    <span class="nav-main-link-name">Tút chạy chuyển đổi không chết domain</span>
+                                                </a>
+                                            </li>
+                                              
+                          <!--------- ---ee- ------->       
+                                    </ul>                      
+                                </li>                                                           
+  <!--------- Menu Tool hỗ trợ --------------------------------------------------------------------------------------->                              
+                                <li class="nav-main-heading">Tool Hỗ Trợ</li>                         
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
+                                        <i class="nav-main-link-icon fa fa-puzzle-piece"></i>
+                                        <span class="nav-main-link-name">Tool Hay</span>
+                                    </a>          
+                                    <ul class="nav-main-submenu">                                
+                                                                                    <li class="nav-main-item">
+                                                <a class="nav-main-link" href="/checklivebm.html">
+                                                    <i class="nav-main-link-icon fas fa-check-circle"></i>
+                                                    <span class="nav-main-link-name">Check Live / Limit BM</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-main-item">
+                                                <a class="nav-main-link" href="/lachcontent.php">
+                                                    <i class="nav-main-link-icon fas fa-sign-language"></i>
+                                                    <span class="nav-main-link-name">Lách Content VPCS</span>
+                                                </a>
+                                            </li>                                           
+                                            <li class="nav-main-item">
+                                                <a class="nav-main-link" href="/ma2fa.php">
+                                                    <i class="nav-main-link-icon fab fa-telegram"></i>
+                                                    <span class="nav-main-link-name">Lấy Mã 2FA</span>
+                                                </a>
+                                            </li>
+                                                                                  
+                                    </ul>                                 
+                                </li>
+   <!---------End  Menu Tool hỗ trợ --------------------------------------------------------------------------------------->                              
+                               
+                                
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link" href="#">
+                                        <i class="nav-main-link-icon fas fa-wallet"></i>
+                                        <span class="nav-main-link-name">Số dư: <span class="badge badge-pill badge-primary">700,000 VNĐ</span></span>
+                                    </a>
+                                </li>
+
+                                                                <li class="nav-main-heading">Extra</li>
+                                <li class="nav-main-item ml-lg-auto">
+                                    <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
+                                        <i class="nav-main-link-icon fa fa-brush"></i>
+                                        <span class="nav-main-link-name d-lg-none">Themes</span>
+                                    </a>
+                                    <ul class="nav-main-submenu nav-main-submenu-right">
+                                        <li class="nav-main-item">
+                                            <a class="nav-main-link" data-toggle="theme" data-theme="default" href="#">
+                                                <i class="nav-main-link-icon fa fa-circle text-default"></i>
+                                                <span class="nav-main-link-name">Default</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-main-item">
+                                            <a class="nav-main-link" data-toggle="theme" data-theme="assets2/css/themes/xwork.min.css" href="#">
+                                                <i class="nav-main-link-icon fa fa-circle text-xwork"></i>
+                                                <span class="nav-main-link-name">xWork</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-main-item">
+                                            <a class="nav-main-link" data-toggle="theme" data-theme="assets2/css/themes/xmodern.min.css" href="#">
+                                                <i class="nav-main-link-icon fa fa-circle text-xmodern"></i>
+                                                <span class="nav-main-link-name">xModern</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-main-item">
+                                            <a class="nav-main-link" data-toggle="theme" data-theme="assets2/css/themes/xeco.min.css" href="#">
+                                                <i class="nav-main-link-icon fa fa-circle text-xeco"></i>
+                                                <span class="nav-main-link-name">xEco</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-main-item">
+                                            <a class="nav-main-link" data-toggle="theme" data-theme="assets2/css/themes/xsmooth.min.css" href="#">
+                                                <i class="nav-main-link-icon fa fa-circle text-xsmooth"></i>
+                                                <span class="nav-main-link-name">xSmooth</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-main-item">
+                                            <a class="nav-main-link" data-toggle="theme" data-theme="assets2/css/themes/xinspire.min.css" href="#">
+                                                <i class="nav-main-link-icon fa fa-circle text-xinspire"></i>
+                                                <span class="nav-main-link-name">xInspire</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-main-item">
+                                            <a class="nav-main-link" data-toggle="theme" data-theme="assets2/css/themes/xdream.min.css" href="#">
+                                                <i class="nav-main-link-icon fa fa-circle text-xdream"></i>
+                                                <span class="nav-main-link-name">xDream</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-main-item">
+                                            <a class="nav-main-link" data-toggle="theme" data-theme="assets2/css/themes/xpro.min.css" href="#">
+                                                <i class="nav-main-link-icon fa fa-circle text-xpro"></i>
+                                                <span class="nav-main-link-name">xPro</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-main-item">
+                                            <a class="nav-main-link" data-toggle="theme" data-theme="assets2/css/themes/xplay.min.css" href="#">
+                                                <i class="nav-main-link-icon fa fa-circle text-xplay"></i>
+                                                <span class="nav-main-link-name">xPlay</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- END Main Navigation -->
+                    </div>
+                </div>
+            <!-- END Navigation --> 
+            <script>
+            function alert_thongbao(){
+                swal("ERROR!", "Để dùng tool hỗ trợ, Yêu cầu số dư Tài khoản trên từ 100.000 VND trở lên!", "error");
+            }
+            </script>
+            <script>
+            function alert_thongbao1(){
+                swal("ERROR!", "Để dùng tool hỗ trợ, Yêu cầu số dư Tài khoản trên từ 500.000 VND trở lên!", "error");
+            }
+            </script>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170465429-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-170465429-1');
+</script>
+<!-- Page Content -->
+<center>>
+                        <iframe src="https://likedao.org/lach-content/convert.html" name="the-iframe" width="90%" height="550px" frameborder="0"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe>
+</br>
+</br>
+
+
+
+                        <iframe src="https://icon.fchat.vn/" name="the-iframe" width="80%" height="950px" frameborder="0"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe>
+
+</center>>
+
+
+		</main>
+            <!-- END Main Container -->
+
+            <!-- Footer -->
+            <footer id="page-footer" class="bg-white border-top">
+                <div class="content py-0">
+                    <div class="row font-size-sm">
+                        <div class="col-sm-6 order-sm-2 mb-1 mb-sm-0 text-center text-sm-right">
+							By: <a href="https://www.facebook.com/tuan.marketing.0888020555">Nguyễn Văn Tuân</a>
+                        </div>
+                        <div class="col-sm-6 order-sm-1 text-center text-sm-left">
+						Liên hệ hỗ trợ và hợp tác</br>Phone/Zalo: <a href="tel:+84888020555">0888.020.555</a></br>
+						Facebook: <a href="https://www.facebook.com/tuan.marketing.0888020555">Nguyễn Văn Tuân</a>
+						
+                        </div>
+                    </div>
+                </div>
+            </footer>
+		</div>
+		<div id="mess"></div>
+
+        <script src="assets2/js/dashmix.core.min.js"></script>
+
+        <script src="assets2/js/dashmix.app.min.js"></script>
+
+        <script src="assets2/js/plugins/chart.js/Chart.bundle.min.js"></script>
+
+		<script src="assets2/js/pages/db_crypto.min.js"></script>
+		<!-- Load Facebook SDK for JavaScript -->
+		
+		<script type="text/javascript">
+         $(document).ready(function() {
+
+	});
+
+
+$('#mua').click(function(){
+				var soluong = $('#soluong').val();
+				var loai = $('.select_type:checked').val();
+				if(soluong < 0){
+					swal("","Hacker Tha Em :(","error");
+					return;
+				}
+				if (soluong == '') {
+					swal("","Vui Lòng Nhập Đầy Đủ Thông Tin","warning");
+					return false;
+				}
+				if (soluong == '0') {
+					swal("","Số Lượng Phải Lớn Hơn 1","error");
+					return false;
+				}
+				$('#submit').prop('disabled', true);
+				    $('#mua').addClass('btn btn-info').html('Vui Lòng Chờ...').attr('disabled','disabled');
+				   
+				$.post('thanhtoan.php', {
+					soluong: soluong,
+					loai:loai
+				}, function(data, status) {
+					$("#mess").html(data);
+					$('#submit').prop('disabled', false);
+					$('#mua').removeClass('btn btn-info').addClass('btn btn-primary').html('Mua Tiếp').removeAttr('disabled');
+					
+				});
+			});
+$('#mua_via').click(function(){
+				var soluong = $('#soluong_via').val();
+				var loai = $('.select_type_via:checked').val();
+				if(soluong < 0){
+					swal("","Hacker Tha Em :(","error");
+					return;
+				}
+				if (soluong == '') {
+					swal("","Vui Lòng Nhập Đầy Đủ Thông Tin","warning");
+					return false;
+				}
+				if (soluong == '0') {
+					swal("","Số Lượng Phải Lớn Hơn 1","error");
+					return false;
+				}
+				$('#submit').prop('disabled', true);
+				    $('#mua_via').addClass('btn btn-info').html('Vui Lòng Chờ...').attr('disabled','disabled');
+				   
+				$.post('thanhtoanvia.php', {
+					soluong: soluong,
+					loai:loai
+				}, function(data, status) {
+					$("#mess").html(data);
+					$('#submit').prop('disabled', false);
+					$('#mua_via').removeClass('btn btn-info').addClass('btn btn-primary').html('Mua Tiếp').removeAttr('disabled');
+				});
+			});
+$('.select_type').click(function(){
+				$('#soluong').val("");
+				$('#tongthanhtoan').html(0);
+			});
+$('#soluong').keyup(function(){
+			var soluong = $('#soluong').val();
+			var loai = $('.select_type:checked').val();
+			if(loai == undefined){
+				swal("","Vui lòng chọn loại link","error");
+				return;
+			}
+			if(soluong < 0){
+				swal("","Hacker :(","error");
+				return;
+			}
+						
+			if(loai == 3 && soluong > 31){
+				swal("","Số Lượng BM 50$ +7 USD 1 TKQC  Hiện Còn 31","error");
+				return;
+			}
+			if(loai == 3){
+			var gia = 22000;
+                        }
+						
+			if(loai == 6 && soluong > 2){
+				swal("","Số Lượng BM Limit 350$ Kháng về Hiện Còn 2","error");
+				return;
+			}
+			if(loai == 6){
+			var gia = 250000;
+                        }
+						
+			if(loai == 7 && soluong > 4){
+				swal("","Số Lượng Bm Limit 50$ Chưa Tạo TKQC Hiện Còn 4","error");
+				return;
+			}
+			if(loai == 7){
+			var gia = 19000;
+                        }
+						
+			if(loai == 31124 && soluong > 15){
+				swal("","Số Lượng BM 50$ +7 VNĐ 1 TKQC Hiện Còn 15","error");
+				return;
+			}
+			if(loai == 31124){
+			var gia = 22000;
+                        }
+						
+			if(loai == 31125 && soluong > 0){
+				swal("","Số Lượng BM Limit 350$ Có TKQC -7 Hiện Còn 0","error");
+				return;
+			}
+			if(loai == 31125){
+			var gia = 180000;
+                        }
+						
+			if(loai == 31126 && soluong > 4){
+				swal("","Số Lượng BM 50$ -7 USD 1 TKQC	 Hiện Còn 4","error");
+				return;
+			}
+			if(loai == 31126){
+			var gia = 22000;
+                        }
+						
+                       
+			var tien = gia * soluong;
+			var vnd = 0; 
+			if(tien < vnd){
+				swal("","Bạn Không Đủ Tiền Để Mua","error");
+			}
+			$('#tongthanhtoan').html(tien.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,"));
+			});
+$('.select_type_via').click(function(){
+				$('#soluong_via').val("");
+				$('#tongthanhtoan_via').html(0);
+			});
+$('#soluong_via').keyup(function(){
+			var soluong = $('#soluong_via').val();
+			var loai = $('.select_type_via:checked').val();
+			if(loai == undefined){
+				swal("","Vui lòng chọn loại via","error");
+				return;
+			}
+			if(soluong < 0){
+				swal("","Hacker :(","error");
+				return;
+			}
+						
+			if(loai == 1 && soluong > 92){
+				swal("","Số Lượng Clone 2FA > 30 Friend Reg Gmail Hiện Còn 92","error");
+				return;
+			}
+			if(loai == 1){
+			var gia = 9000;
+                        }
+						
+			if(loai == 2 && soluong > 40){
+				swal("","Số Lượng Via Việt Cứng <1k Friend Hiện Còn 40","error");
+				return;
+			}
+			if(loai == 2){
+			var gia = 35000;
+                        }
+						
+			if(loai == 7 && soluong > 65){
+				swal("","Số Lượng Via Ngoại Random Scan Hiện Còn 65","error");
+				return;
+			}
+			if(loai == 7){
+			var gia = 9000;
+                        }
+						
+			if(loai == 10 && soluong > 99){
+				swal("","Số Lượng Clone 2FA - Reg Gmail Có Avtar Hiện Còn 99","error");
+				return;
+			}
+			if(loai == 10){
+			var gia = 5000;
+                        }
+						
+			if(loai == 12 && soluong > 0){
+				swal("","Số Lượng Via Việt Cứng - Trên 1k Friend Hiện Còn 0","error");
+				return;
+			}
+			if(loai == 12){
+			var gia = 49000;
+                        }
+						
+			if(loai == 13 && soluong > 8){
+				swal("","Số Lượng Via Việt Cổ tạo từ trước 2016 Hiện Còn 8","error");
+				return;
+			}
+			if(loai == 13){
+			var gia = 69000;
+                        }
+						
+                       
+			var tien = gia * soluong;
+			var vnd = 0; 
+			if(tien < vnd){
+				swal("","Bạn Không Đủ Tiền Để Mua","error");
+			}
+			$('#tongthanhtoan_via').html(tien.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,"));
+			});
+			
+			</script>
+			  <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v7.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="100137785092924">
+      </div>
+      <!--Start of Tawk.to Script-->
+<style>.float-contact {
+position: fixed;
+bottom: 20px;
+left: 20px;
+z-index: 99999;
+}
+.chat-zalo {
+background: #8eb22b;
+border-radius: 20px;
+padding: 0 18px;
+color: white;
+display: block;
+margin-bottom: 6px;
+}
+.chat-face {
+background: #125c9e;
+border-radius: 20px;
+padding: 0 18px;
+color: white;
+display: block;
+margin-bottom: 6px;
+}
+.float-contact .hotline {
+background: #d11a59!important;
+border-radius: 20px;
+padding: 0 18px;
+color: white;
+display: block;
+margin-bottom: 6px;
+}
+.chat-zalo a, .chat-face a, .hotline a {
+font-size: 15px;
+color: white;
+font-weight: 400;
+text-transform: none;
+line-height: 0;
+}
+@media (max-width: 549px){
+.float-contact{
+display:none
+}
+}</style>
+<div class="float-contact">
+<button class="chat-zalo">
+<a href="http://zalo.me/0888020555">Chat Zalo</a>
+</button>
+<button class="chat-face">
+<a href="http://m.me/tuan.marketing.0888020555">Chat Facebook</a>
+</button>
+<button class="hotline">
+<a href="tel:0888020555">Hotline: 0888 020 555</a>
+</button>
+</div>
+<!--End of Tawk.to Script-->
+    </body>
+</html>
